@@ -1,5 +1,5 @@
 name: elixir
-version: 0.0.4
+version: 0.0.5
 type: main
 platform: ubuntu@12.04
 description: box with erlang, elixir and rebar
@@ -8,26 +8,26 @@ keywords:
   - erlang
   - rebar
 packages:
-  - erlang@R16B02
-  - elixir@0.11.2
-  - rebar@2.0.0
+  - erlang@R16B03
+  - elixir@0.12.4
+  - rebar@2.1.0
 script : |
   sudo apt-get update
   sudo apt-get install -yq build-essential wget libncurses5-dev openssl libssl-dev fop xsltproc libxml2-utils unixodbc-dev git-core
-  wget http://www.erlang.org/download/otp_src_R16B02.tar.gz
-  tar -xzvf otp_src_R16B02.tar.gz
-  cd otp_src_R16B02
+  wget http://www.erlang.org/download/otp_src_R16B03-1.tar.gz
+  tar -xzvf otp_src_R16B03-1.tar.gz
+  cd otp_src_R16B03-1
   ./configure --enable-m64-build --enable-hipe --enable-threads --enable-dynamic-ssl-lib --enable-shared-zlib --enable-smp-support
   sudo make install
   cd -
-  wget https://github.com/basho/rebar/archive/2.0.0.tar.gz -O rebar-2.0.0.tar.gz
-  tar zxvf rebar-2.0.0.tar.gz
-  cd rebar-2.0.0
+  wget https://github.com/rebar/rebar/archive/2.1.0.tar.gz -O rebar-2.1.0.tar.gz
+  tar zxvf rebar-2.1.0.tar.gz
+  cd rebar-2.1.0
   make
   sudo mv rebar /bin/
   cd -
-  wget https://github.com/elixir-lang/elixir/archive/v0.11.2.tar.gz -O elixir-0.11.2.tar.gz
-  tar zxvf elixir-0.11.2.tar.gz
-  cd elixir-0.11.2
+  wget https://github.com/elixir-lang/elixir/archive/v0.12.4.tar.gz -O elixir-0.12.4.tar.gz
+  tar zxvf elixir-0.12.4.tar.gz
+  cd elixir-0.12.4
   sudo make install
   cd -
