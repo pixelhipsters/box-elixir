@@ -7,9 +7,9 @@ Wercker box for [elixir](https://github.com/elixir-lang), with [Erlang](www.erla
 
 ## Versions
 
-* Erlang R16B03-1
-* Elixir 0.12.4
-* Rebar 2.1.0
+* erlang@OTP_17.0-rc1
+* elixir@0.13.0-dev
+* rebar@2.1.0
 
 ## Example
 
