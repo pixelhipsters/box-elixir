@@ -16,6 +16,6 @@ Wercker box for [elixir](https://github.com/elixir-lang), with [Erlang](www.erla
 Using a box is trivial, the wercker.yml includes a box definition that you can leverage.
 
 ```yaml
-box: bitwalker/elixir@0.0.8
+box: bitwalker/elixir@0.0.9
 ```
 

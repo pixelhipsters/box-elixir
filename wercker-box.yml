@@ -1,5 +1,5 @@
 name: elixir
-version: 0.0.8
+version: 0.0.9
 type: main
 platform: ubuntu@12.04
 description: box with erlang, elixir and rebar
