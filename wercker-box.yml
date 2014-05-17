@@ -1,5 +1,5 @@
 name: elixir
-version: 0.0.10
+version: 0.1.0
 type: main
 platform: ubuntu@12.04
 description: box with erlang, elixir and rebar
@@ -9,7 +9,7 @@ keywords:
   - rebar
 packages:
   - erlang@OTP_17.0-1
-  - elixir@0.13.2-dev
+  - elixir@0.13.3-dev
   - rebar@2.1.0
 script : |
   sudo apt-get update
