@@ -8,14 +8,14 @@ Wercker box for [elixir](https://github.com/elixir-lang), with [Erlang](www.erla
 ## Versions
 
 * erlang@OTP_17.0
-* elixir@0.13.0-dev
-* rebar@2.1.0
+* elixir@1.0.0
+* rebar@2.5.1
 
 ## Example
 
 Using a box is trivial, the wercker.yml includes a box definition that you can leverage.
 
 ```yaml
-box: bitwalker/elixir@0.0.9
+box: nanoxd/elixir@0.2.0
 ```
 

@@ -1,5 +1,5 @@
 name: elixir
-version: 0.1.0
+version: 0.2.0
 type: main
 platform: ubuntu@12.04
 description: box with erlang, elixir and rebar
@@ -9,21 +9,21 @@ keywords:
   - rebar
 packages:
   - erlang@OTP_17.0-1
-  - elixir@0.13.3-dev
-  - rebar@2.1.0
+  - elixir@1.0.0
+  - rebar@2.5.1
 script : |
   sudo apt-get update
   sudo apt-get install -yq build-essential autoconf wget libncurses5-dev openssl libssl-dev fop xsltproc libxml2-utils unixodbc-dev git-core libwxbase2.8-0 libwxgtk2.8-0
   wget http://packages.erlang-solutions.com/site/esl/esl-erlang/FLAVOUR_1_general/esl-erlang_17.0-1~ubuntu~precise_amd64.deb
   sudo dpkg -i esl-erlang_17.0-1~ubuntu~precise_amd64.deb
-  wget https://github.com/rebar/rebar/archive/2.1.0.tar.gz -O rebar-2.1.0.tar.gz
-  tar zxvf rebar-2.1.0.tar.gz
-  cd rebar-2.1.0
+  wget https://github.com/rebar/rebar/archive/2.5.1.tar.gz -O rebar-2.5.1.tar.gz
+  tar zxvf rebar-2.5.1.tar.gz
+  cd rebar-2.5.1
   make
   sudo mv rebar /bin/
   cd -
-  git clone https://github.com/elixir-lang/elixir
-  cd elixir
-  git checkout master
+  wget https://github.com/elixir-lang/elixir/archive/v1.0.0.tar.gz -O elixir-1.0.0.tar.gz
+  tar zxvg elixir-1.0.0.tar.gz
+  cd elixir-1.0.0
   sudo make install
   cd -
