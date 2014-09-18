@@ -3,7 +3,7 @@ box-elixir
 
 Wercker box for [elixir](https://github.com/elixir-lang), with [Erlang](www.erlang.org) and [Rebar](https://github.com/rebar/rebar)
 
-[![wercker status](https://app.wercker.com/status/c460abca6968973886848acd6d8e2082/m/ "wercker status")](https://app.wercker.com/project/bykey/c460abca6968973886848acd6d8e2082)
+[![wercker status](https://app.wercker.com/status/1068824e1f4ccb8336c9664b32a731f5/m "wercker status")](https://app.wercker.com/project/bykey/1068824e1f4ccb8336c9664b32a731f5)
 
 ## Versions
 
