@@ -22,8 +22,9 @@ script : |
   make
   sudo mv rebar /bin/
   cd -
-  wget https://github.com/elixir-lang/elixir/archive/v1.0.0.tar.gz -O elixir-1.0.0.tar.gz
-  tar zxvg elixir-1.0.0.tar.gz
-  cd elixir-1.0.0
+  # wget https://github.com/elixir-lang/elixir/archive/v1.0.0.tar.gz -O elixir-1.0.0.tar.gz
+  git clone https://github.com/elixir-lang/elixir.git 
+  cd elixir
+  git checkout v1.0.0
   sudo make install
   cd -
