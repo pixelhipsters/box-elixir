@@ -1,5 +1,5 @@
 name: elixir
-version: 0.2.2
+version: 0.2.3
 type: main
 platform: ubuntu@12.04
 description: box with erlang, elixir and rebar
@@ -15,7 +15,7 @@ packages:
   - libxml2-dev
 script : |
   sudo apt-get update
-  sudo apt-get install -yq build-essential autoconf wget libncurses5-dev openssl libssl-dev fop xsltproc libxml2-utils libxslt-dev libxml2-dev unixodbc-dev git-core libwxbase2.8-0 libwxgtk2.8-0 curl
+  sudo apt-get install -yq build-essential autoconf wget libncurses5-dev openssl libssl-dev fop xsltproc libxml2 libxml2-dev libxslt libxslt-dev libxml2-utils unixodbc-dev git-core libwxbase2.8-0 libwxgtk2.8-0 curl
   wget http://packages.erlang-solutions.com/site/esl/esl-erlang/FLAVOUR_1_general/esl-erlang_17.0-1~ubuntu~precise_amd64.deb
   sudo dpkg -i esl-erlang_17.0-1~ubuntu~precise_amd64.deb
   wget https://github.com/rebar/rebar/archive/2.5.1.tar.gz -O rebar-2.5.1.tar.gz
