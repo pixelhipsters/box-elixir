@@ -9,7 +9,7 @@ keywords:
   - rebar
 packages:
   - erlang@OTP_17.0-1
-  - elixir@1.0.0
+  - elixir@1.0.2
   - rebar@2.5.1
   - libxslt-dev
   - libxml2-dev
@@ -26,6 +26,6 @@ script : |
   cd -
   git clone https://github.com/elixir-lang/elixir.git 
   cd elixir
-  git checkout v1.0.0
+  git checkout v1.0.2
   sudo make install
   cd -
